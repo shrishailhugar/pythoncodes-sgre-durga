@@ -1,0 +1,5 @@
+28/05/2024 Tuesday May 07:14:12:AM:INFO:root:Hi Info:20016:logcode:8
+28/05/2024 Tuesday May 07:14:12:AM:WARNING:root:Hi Warning:20016:logcode:9
+28/05/2024 Tuesday May 07:14:12:AM:DEBUG:root:Hi debug:20016:logcode:10
+28/05/2024 Tuesday May 07:14:12:AM:CRITICAL:root:Hi Critical:20016:logcode:11
+28/05/2024 Tuesday May 07:14:12:AM:ERROR:root:Hi Error:20016:logcode:12

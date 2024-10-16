@@ -1,0 +1,3 @@
+28/05/2024 08:18:04:PM:CRITICAL:demologger:custom_logger_for_stream_and_file_handler:15:Hi Critical
+28/05/2024 08:18:04:PM:ERROR:demologger:custom_logger_for_stream_and_file_handler:16:Hi Error
+28/05/2024 08:18:04:PM:WARNING:demologger:custom_logger_for_stream_and_file_handler:17:Hi Warning

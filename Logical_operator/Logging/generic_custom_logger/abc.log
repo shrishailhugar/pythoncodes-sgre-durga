@@ -1,0 +1,12 @@
+29/05/2024 12:56:53:PM:INFO:log_test1logger:test_custom_logger:9:Hi INFOfrom test1
+29/05/2024 12:56:53:PM:CRITICAL:log_test1logger:test_custom_logger:10:Hi Criticalfrom test1
+29/05/2024 12:56:53:PM:ERROR:log_test1logger:test_custom_logger:11:Hi Errorfrom test1
+29/05/2024 12:56:53:PM:WARNING:log_test1logger:test_custom_logger:12:Hi Warningfrom test1
+29/05/2024 12:56:53:PM:CRITICAL:log_test2logger:test_custom_logger:20:Hi Criticalfrom test2
+29/05/2024 12:56:53:PM:ERROR:log_test2logger:test_custom_logger:21:Hi Errorfrom test2
+29/05/2024 01:00:03:PM:INFO:log_test1 logger:test_custom_logger:9:Hi INFOfrom test1
+29/05/2024 01:00:03:PM:CRITICAL:log_test1 logger:test_custom_logger:10:Hi Criticalfrom test1
+29/05/2024 01:00:03:PM:ERROR:log_test1 logger:test_custom_logger:11:Hi Errorfrom test1
+29/05/2024 01:00:03:PM:WARNING:log_test1 logger:test_custom_logger:12:Hi Warningfrom test1
+29/05/2024 01:00:03:PM:CRITICAL:log_test2 logger:test_custom_logger:20:Hi Criticalfrom test2
+29/05/2024 01:00:03:PM:ERROR:log_test2 logger:test_custom_logger:21:Hi Errorfrom test2

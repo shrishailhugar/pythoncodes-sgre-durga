@@ -1,0 +1,4 @@
+29/05/2024 08:42:46:AM:INFO:demologger:test2:12:Hi INFO from test2
+29/05/2024 08:42:46:AM:CRITICAL:demologger:test2:13:Hi Critical from test2
+29/05/2024 08:42:46:AM:ERROR:demologger:test2:14:Hi Error from test2
+29/05/2024 08:42:46:AM:WARNING:demologger:test2:15:Hi Warning from test2

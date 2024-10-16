@@ -1,0 +1,6 @@
+t1=eval(input('Enter the input tuple:'))
+print(list(map(lambda a:a*a,t1)))
+print(type(map(lambda a:a*a,t1)))
+t2=eval(input('Enter 2nd tuple elements:'))
+t3=eval(input('Enter 2nd tuple elements:'))
+print(list(map(lambda x,y,z:x*y*z,t1,t2,t3)))

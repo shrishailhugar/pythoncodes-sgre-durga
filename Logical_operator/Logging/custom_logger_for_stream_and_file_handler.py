@@ -1,0 +1,20 @@
+import logging
+
+logger = logging.getLogger('demologger')
+logger.setLevel(logging.DEBUG)
+console_handler=logging.StreamHandler()
+console_handler.setLevel(logging.ERROR)
+file_handler = logging.FileHandler('logfileforfile.log',mode='w')
+file_handler.setLevel(logging.WARNING)
+formatter1 = logging.Formatter('%(asctime)s:%(levelname)s:%(name)s:%(module)s:%(lineno)d:%(message)s',
+                              datefmt='%d/%m/%Y %I:%M:%S:%p')
+formatter2 = logging.Formatter('%(asctime)s:%(levelname)s')
+file_handler.setFormatter(formatter1)
+console_handler.setFormatter(formatter2)
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+logger.debug('Hi debug')
+logger.info('Hi INFO')
+logger.critical('Hi Critical')
+logger.error('Hi Error')
+logger.warning('Hi Warning')

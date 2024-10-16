@@ -1,0 +1,4 @@
+29/05/2024 01:11:49:PM:INFO:log_test1 logger:test_custom_logger:9:Hi INFOfrom test1
+29/05/2024 01:11:49:PM:CRITICAL:log_test1 logger:test_custom_logger:10:Hi Criticalfrom test1
+29/05/2024 01:11:49:PM:ERROR:log_test1 logger:test_custom_logger:11:Hi Errorfrom test1
+29/05/2024 01:11:49:PM:WARNING:log_test1 logger:test_custom_logger:12:Hi Warningfrom test1

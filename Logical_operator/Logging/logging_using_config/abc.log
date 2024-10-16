@@ -1,0 +1,5 @@
+29/05/2024 04:25:44:PM:DEBUG:demoLogger:Hi debug
+29/05/2024 04:25:44:PM:INFO:demoLogger:Hi INFO
+29/05/2024 04:25:44:PM:CRITICAL:demoLogger:Hi Critical
+29/05/2024 04:25:44:PM:ERROR:demoLogger:Hi Error
+29/05/2024 04:25:44:PM:WARNING:demoLogger:Hi Warning
