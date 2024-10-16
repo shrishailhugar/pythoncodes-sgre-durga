@@ -1,0 +1,5 @@
+s=input()
+print(s[::-1])
+s1=reversed(s)
+x=''.join(s1)
+print(x)
