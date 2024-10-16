@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .passed {
+            background-color: lightgreen;
+        }
+        .failed {
+            background-color: lightcoral;
+        }
+        .skipped {
+            background-color: lightyellow;
+        }
+        .blue {
+            color: blue;
+        }
+        .green{
+        color: green;
+        }
+        .red{
+        color: red;
+        }
+        .yellow{
+        color:yellow;
+        }
+    </style>
+</head>
+<body>
+<h2>Test Report</h2>
+<p>Total Testcases: <span id="total" class="blue"></span></p>
+<p>Passed: <span id="passed" class="green"></span></p>
+<p>Failed: <span id="failed" class="red"></span></p>
+<p>Skipped: <span id="skipped" class="yellow"></span></p>
+<table id="reportTable">
+    <tr>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Duration</th>
+    </tr>
+</table>
+
+<script>
+    // Example data (replace this with your actual data)
+    var testCases = [
+        { name: 'Test 1', status: 'Passed', duration: '5s' },
+        { name: 'Test 2', status: 'Failed', duration: '3s' },
+        { name: 'Test 3', status: 'Skipped', duration: '1s' }
+    ];
+
+    function countTestCases(testCases,state) {
+        var Count = 0;
+        for (var i = 0; i < testCases.length; i++) {
+            if (testCases[i].status === state) {
+                Count++;
+            }
+        }
+        return Count;
+        }
+    // Function to generate table rows based on test cases
+    function generateRows() {
+        var table = document.getElementById('reportTable');
+        var total = testCases.length;
+        var passedCount = countTestCases(testCases,'Passed');
+        var failedCount = countTestCases(testCases,'Failed');
+        var skippedCount = countTestCases(testCases,'Skipped');
+        document.getElementById('total').innerText = total;
+        document.getElementById('passed').innerText = passedCount;
+        document.getElementById('failed').innerText = failedCount;
+        document.getElementById('skipped').innerText = skippedCount;
+        for (var i = 0; i < testCases.length; i++) {
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            cell1.innerText = testCases[i].name;
+            cell2.innerText = testCases[i].status;
+            cell2.className = testCases[i].status.toLowerCase();
+            cell3.innerText = testCases[i].duration;
+        }
+    }
+    // Generate table rows when the page loads
+    window.onload = function() {
+        generateRows();
+
+        // Generate pie chart after table creation
+        var ctx = document.getElementById('testChart').getContext('2d');
+        var testChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Passed', 'Failed', 'Skipped'],
+                datasets: [{
+                    data: [passedCount, failedCount, skippedCount],
+                    backgroundColor: [
+                        'lightgreen',
+                        'lightcoral',
+                        'lightyellow'
+                    ]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Test Case Distribution'
+                }
+            }
+        });
+    };
+</script>
+</body>
+</html>
